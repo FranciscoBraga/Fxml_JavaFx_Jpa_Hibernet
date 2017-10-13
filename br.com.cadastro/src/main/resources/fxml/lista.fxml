@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.cadastro.controller.ListaController">
+   <children>
+      <Label layoutX="126.0" layoutY="6.0" text="Lista de Usuários" />
+      <TableView fx:id="tbTabela" layoutX="35.0" layoutY="39.0" prefHeight="285.0" prefWidth="271.0">
+        <columns>
+          <TableColumn fx:id="tcNome" prefWidth="130.0" text="Nome" />
+          <TableColumn fx:id="tcIdade" prefWidth="137.0" text="idade" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSalvar" layoutX="14.0" layoutY="475.0" mnemonicParsing="false" onAction="#salvar" prefHeight="25.0" prefWidth="53.0" text="Salvar" />
+      <Button fx:id="btnEditar" layoutX="70.0" layoutY="475.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
+      <Button fx:id="btnCancelar" layoutX="128.0" layoutY="475.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button fx:id="btnSair" layoutX="291.0" layoutY="475.0" mnemonicParsing="false" onAction="#sair" text="Sair" />
+      <Button fx:id="btnExcluir" layoutX="202.0" layoutY="475.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+      <TextField fx:id="txfNome" layoutX="19.0" layoutY="378.0" text="Digite seu Nome" />
+      <TextField fx:id="txfIdade" layoutX="179.0" layoutY="378.0" text="Digite sua Idade" />
+      <Label fx:id="lblNome" layoutX="21.0" layoutY="355.0" text="Nome" />
+      <Label fx:id="lblIdade" layoutX="176.0" layoutY="355.0" text="Idade" />
+   </children>
+</AnchorPane>
